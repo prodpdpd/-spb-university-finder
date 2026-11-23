@@ -1,0 +1,300 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background: #f5f7f2;
+    color: #17231f;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: white;
+    border-bottom: 1px solid #e5e9e1;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.logo span,
+footer span {
+    color: #75a83d;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #26342c;
+    font-size: 13px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #75a83d;
+}
+
+.hero {
+    min-height: 470px;
+    padding: 100px 10%;
+    background: linear-gradient(120deg, #e5f0da, #f5f7f2);
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.subtitle {
+    color: #6d9d3d;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 6vw, 65px);
+    line-height: 1.1;
+    letter-spacing: -3px;
+}
+
+.hero h1 span {
+    color: #75a83d;
+}
+
+.hero-content > p:not(.subtitle) {
+    color: #718078;
+    line-height: 1.8;
+    margin: 25px 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 16px 25px;
+    background: #17231f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #75a83d;
+    transform: translateY(-3px);
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    padding: 40px 20px;
+    background: white;
+    text-align: center;
+}
+
+.stats h2 {
+    font-size: 30px;
+}
+
+.stats p {
+    font-size: 12px;
+    color: #718078;
+    margin-top: 5px;
+}
+
+.section {
+    padding: 85px 10%;
+}
+
+.section > h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.section > p {
+    color: #718078;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.finder-box {
+    background: white;
+    border: 1px solid #e3e9df;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 650px;
+    margin-top: 25px;
+}
+
+.finder-box label {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.finder-box select,
+#search {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #e3e9df;
+    border-radius: 5px;
+    background: #f8faf6;
+    font-family: inherit;
+    margin-bottom: 15px;
+}
+
+.finder-box button {
+    padding: 15px 22px;
+    background: #17231f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.finder-box button:hover {
+    background: #75a83d;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+.university-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.uni-card {
+    background: white;
+    padding: 25px;
+    border: 1px solid #e3e9df;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.uni-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px #17231f12;
+}
+
+.uni-card h3 {
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.uni-card p {
+    color: #718078;
+    font-size: 12px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.uni-card a {
+    color: #679b39;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.tag {
+    display: inline-block;
+    padding: 6px 9px;
+    background: #edf4e6;
+    border-radius: 4px;
+    color: #648c3d;
+    font-size: 10px;
+    margin: 3px;
+}
+
+.about {
+    background: #eaf1e4;
+}
+
+.about p {
+    max-width: 700px;
+}
+
+footer {
+    background: white;
+    padding: 35px 8%;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+footer p {
+    color: #718078;
+    font-size: 11px;
+    margin: 7px;
+}
+
+@media (max-width: 800px) {
+    .header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .stats {
+        gap: 30px;
+    }
+
+    .university-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .university-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 70px 7%;
+    }
+
+    .section {
+        padding: 60px 7%;
+    }
+
+    .stats {
+        justify-content: space-around;
+    }
+}
