@@ -1,1 +1,121 @@
 
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Каталог университетов Санкт-Петербурга. Найди вуз своей мечты!">
+    <title>SPB University Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo">SPB<span>UNI</span></div>
+
+    <nav>
+        <a href="#home">Главная</a>
+        <a href="#catalog">Вузы</a>
+        <a href="#finder">Подбор вуза</a>
+        <a href="#about">О проекте</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="subtitle">ТВОЁ БУДУЩЕЕ НАЧИНАЕТСЯ ЗДЕСЬ</p>
+
+        <h1>Найди университет<br>
+            <span>своей мечты</span>
+        </h1>
+
+        <p>
+            Исследуй университеты Санкт-Петербурга,
+            сравнивай направления и выбирай свой путь.
+        </p>
+
+        <a href="#finder" class="button">Подобрать университет →</a>
+    </div>
+</section>
+
+<section class="stats">
+    <div>
+        <h2>12+</h2>
+        <p>Университетов</p>
+    </div>
+
+    <div>
+        <h2>7</h2>
+        <p>Направлений</p>
+    </div>
+
+    <div>
+        <h2>100%</h2>
+        <p>Твой выбор</p>
+    </div>
+</section>
+
+<section class="section" id="finder">
+    <h2>Умный подбор университета</h2>
+    <p>Ответь на вопрос, и мы поможем найти подходящий вуз.</p>
+
+    <div class="finder-box">
+        <label for="direction">Какое направление тебя интересует?</label>
+
+        <select id="direction">
+            <option value="it">IT и программирование</option>
+            <option value="engineering">Инженерия</option>
+            <option value="economics">Экономика и бизнес</option>
+            <option value="medicine">Медицина</option>
+            <option value="humanities">Гуманитарные науки</option>
+            <option value="design">Дизайн</option>
+            <option value="architecture">Архитектура</option>
+        </select>
+
+        <button onclick="findUniversity()">Найти мой вуз</button>
+
+        <div id="result"></div>
+    </div>
+</section>
+
+<section class="section" id="catalog">
+    <h2>Университеты Санкт-Петербурга</h2>
+    <p>Изучи популярные высшие учебные заведения города.</p>
+
+    <input
+        type="text"
+        id="search"
+        placeholder="Поиск университета..."
+        oninput="searchUniversity()"
+    >
+
+    <div class="university-grid" id="universityList"></div>
+</section>
+
+<section class="about section" id="about">
+    <h2>О нашем проекте</h2>
+
+    <p>
+        SPB University Finder — интерактивный справочник,
+        который помогает абитуриентам выбирать университеты
+        Санкт-Петербурга.
+    </p>
+
+    <p>
+        Наша цель — сделать поиск университета удобным,
+        понятным и интересным.
+    </p>
+</section>
+
+<footer>
+    <h3>SPB<span>UNI</span></h3>
+    <p>© 2026 SPB University Finder</p>
+    <p>Твой путь к образованию начинается здесь.</p>
+</footer>
+
+<script src="database.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
